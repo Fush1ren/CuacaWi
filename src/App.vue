@@ -3,9 +3,14 @@ import axios from "axios";
 import { computed, ref } from "vue";
 import config from "./config";
 import type { WeatherType } from "./types";
+import bg from "@/assets/images/background-web.jpg";
 
 const townModel = ref<string>();
 const weatherData = ref<WeatherType>();
+
+const backgroundStyle = {
+  backgroundImage: `url(${bg})`,
+};
 
 // onMounted(() => {
 //   navigator.geolocation.getCurrentPosition(success, error);
@@ -102,8 +107,9 @@ const getTime = (num: number): string => {
 <template>
   <div
     class="relative h-screen w-full text-white bg-cover bg-center"
-    style="background-image: url('/src/assets/images/background-web.jpg')"
+    :style="backgroundStyle"
   >
+    <!-- style="background-image: url('/src/assets/images/background-web.jpg')" -->
     <div class="flex flex-col h-full justify-between">
       <div class="w-full">
         <div class="flex justify-center w-full h-fit py-8 lg:py-4">
