@@ -245,20 +245,28 @@ const getTime = (num: number): string => {
           </div>
         </div>
       </div>
-      <div class="w-full h-[40px] text-sm lg:text-lg">
-        <div class="flex justify-center gap-2">
-          <div class="flex gap-1 justify-center">
-            <a
-              href="https://openweathermap.org/"
-              class="hover:underline hover:cursor-pointer hover:text-blue-500"
-              >API from OpenWeather</a
-            >
-          </div>
-          <div class="flex gap-1 justify-center">
+      <div class="w-full h-[40px] text-xs lg:text-lg">
+        <div class="flex justify-center lg:gap-2 text-center">
+          <div class="w-fit">
             <a
               href="https://www.freepik.com"
               class="hover:underline hover:cursor-pointer hover:text-blue-500"
               >Designed by Freepik</a
+            >
+          </div>
+          <div class="w-fit">
+            <a
+              href="https://openweathermap.org"
+              class="hover:underline hover:cursor-pointer hover:text-blue-500"
+              >Weather API from OpenWeather</a
+            >
+          </div>
+
+          <div class="w-fit">
+            <a
+              href="https://flagsapi.com"
+              class="hover:underline hover:cursor-pointer hover:text-blue-500"
+              >Flag API by FlagsAPI</a
             >
           </div>
         </div>
